@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'Jua';
+    src: url('fonts/jua.woff2') format('woff2'),
+         url('fonts/jua.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+:root {
+    --font-family-jua: 'Jua', sans-serif;
+    --text-rgb-79-53-53: rgba(79, 53, 53, 1);
+  }
+#titulo {
+    color: rgb(79, 53, 53);
+    font-family: 'Jua', sans-serif;
+    display: grid;
+    place-items: center;
+    resize: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+  }
+
+
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: grid;
+    place-items: center;
+    resize: none;
+  }
+.completo{
+    flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgb(131, 193, 159);
+  padding: 10px;
+}
+#cuerpo{
+  height: 210px;
+  width: 190px;
+  background-color: rgb(233, 231, 231);
+  border-radius: 10px;
+  position: relative;
+  margin:10px;
+  resize: none;
+}
+#Titulo{
+    flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgb(233, 231, 231);
+  border-radius: 20px;
+  position: relative;
+  padding: 10px;
+}
+.button{
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  display: grid;
+  place-items: center;
+}
+
+#again{
+  border-radius: 10px;
+  z-index: 1;
+  width: 100px;
+  height: 40px;
+}
+
+
+#fondo{
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border-radius: 10px;
+  width: 100%;
+  height: 180px;
+  position: relative;
+  display: block;
+}
+
+
+
+
+#contenido{
+  padding: 15px;
+  position: relative;
+}
+
+
+.button{
+  background-color: rgb(233, 231, 231);
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.pulsar{
+  position: absolute;
+  z-index: 1;
+}
+
+
+#start{
+  display: grid;
+  place-items: center;
+}
+
+#comienzo {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#piedra {
+  position: absolute;
+  top: calc(50% - 60px); 
+  left: calc(50% - 45px); 
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+}
+
+#papel {
+  position: absolute;
+  top: calc(50% - 60px); 
+  left: calc(50% + 45px); 
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+}
+
+#tijera {
+  position: absolute;
+  top: calc(50% + 15px); 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+}
+
+#reintentar {
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: hidden;
+}
+
+#imgplay{
+  height: 40px;
+  pointer-events: none;
+  background: transparent;
+}
+
+#imgpiedra{
+  height: 30px;
+  pointer-events: none;
+  background: transparent;
+}
+
+#imgtijera{
+  height: 45px;
+  pointer-events: none;
+  background: transparent;
+}
+#imgpapel{
+  height: 45px;
+  pointer-events: none;
+  background: transparent;
+}
+#imgreestart{
+  height: 30px;
+  pointer-events: none;
+  background: transparent;
+}
+#computer{
+  visibility: hidden;
+  color: rgb(79, 53, 53);
+    font-family: 'Jua', sans-serif;
+    position: absolute;
+  top: 40px;
+  left: 26%;
+  transform: translateX(-40%);
+  text-align: center;
+  font-size: 11px;
+
+}
+#user{
+  visibility: hidden;
+  color: rgb(79, 53, 53);
+    font-family: 'Jua', sans-serif;
+    position: absolute;
+  top: 40px; 
+  left: 76%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 11px;
+}
+
+#imgcomputer, #imguser {
+  width: 60px;  
+  height: auto; 
+}
+
+#computerimg {
+  visibility: hidden;
+  position: relative;
+  top: -115px; 
+  left: 90px;
+  transform: translateX(-50%);
+}
+
+#userimg {
+  visibility: hidden;
+  position: absolute;
+  top: 80px; 
+  left: 76%;
+  transform: translateX(-50%);
+}
+

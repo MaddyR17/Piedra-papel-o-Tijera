@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Piedra Papel O Tijera</title>
+        <script src="piedrapapeltijera.js"></script>
+        <link rel="stylesheet" href="piedrapapeltijera.css">
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="completo">
+            <div class="container" id="Titulo">
+                <p id="titulo">Piedra Papel O Tijera</p>
+            </div>
+            <div class="container" id="cuerpo">
+                <div class="contenedor" id="contenido">
+                    <img id="fondo" src="https://i.pinimg.com/736x/9f/fa/b9/9ffab9a315388481b3a8bcba7d6e3f9a.jpg"/>
+                    <div class="pulsar" id="comienzo">
+                        <button class='button' id="start" onclick="start()">
+                            <img src="play.png" id="imgplay"/>
+                        </button>
+                    </div>
+                    <div class="pulsar" id="piedra">
+                        <button class='button' id="stone" onclick="elegir(1)">
+                            <img src="piedra.png" id="imgpiedra"/>
+                        </button>
+                    </div>
+                    <div class="pulsar" id="papel">
+                        <button class='button' id="paper" onclick="elegir(2)">
+                            <img src="papel.png" id="imgpapel"/>
+                        </button>
+                    </div>
+                    <div class="pulsar" id="tijera">
+                        <button class='button' id="scissor" onclick="elegir(3)">
+                            <img src="tijera.png" id="imgtijera"/>
+                        </button>
+                    </div>
+                    <div class="pulsar" id="reintentar">
+                        <button class='button' id="again" onclick="restart()">
+                            <img src="restart.png" id="imgreestart"/>
+                        </button>
+                    </div>
+                    <div class="imagen" id="computerimg">
+                        <img id="imgcomputer" src="" alt="computer"/>
+                    </div>
+                    <div class="imagen" id="userimg">
+                        <img id="imguser" src="" alt='user'/>
+                    </div>
+                    <div class="text" id="compu">
+                        <p id="computer">Computadora</p>
+                    </div>
+                    <div class="text" id="usuario">
+                        <p id="user">Usuario</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
